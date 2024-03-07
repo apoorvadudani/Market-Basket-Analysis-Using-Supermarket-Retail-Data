@@ -46,13 +46,13 @@ Then, I use a command called apriori on the data to find patterns (or associatio
 - The likelihood that the pattern holds true is at least 40% (conf=0.4). This is called the minimum confidence.
 - The patterns that meet these criteria are then stored in a new object called retail.rules, which contains a big list of rules, which tell us things like "When someone buys item A and item B, they almost always buy item C too." Imagine we find out that whenever people buy a specific type of pasta and sauce, they also buy a certain cheese. That's a pattern we can use.
 
+## Visualization
 
+This command loads the arulesViz package, which is a tool that allows you to visualize the association rules you've found.
 
 plot(retail.rules)
 
 This line creates a basic plot (chart) of the association rules stored in retail.rules. The plot shows the rules according to their confidence (Y-axis) and support (X-axis), and it uses the darkness of points to indicate lift (how much more often the rule occurs than would be expected if the items were independent).
-
-## Findings and insights
 
 ![image](https://github.com/apoorvadudani/Market-Basket-Analysis/assets/113878059/d249e012-da3b-406b-9018-377b1588d194)
 
@@ -69,3 +69,5 @@ Edge Thickness: While not explicitly labeled in the image, in such graphs, the t
 Labels: Each node has a number label. These numbers are identifiers for each item or itemset. In a detailed report, you would have a key that tells you which number corresponds to which item.
 
 Legend: The legend on the right side explains the node sizes by support values and the color intensity by lift values. The legend allows you to understand what the sizes and colors mean in the context of the data being represented.
+
+## Findings and insights
