@@ -2,11 +2,11 @@
 
 ## Background
 
-I investigate associations in a larger set of retail transaction data from a Belgian supermarket chain made publicly available by Brijs et al. in .dat format: http://fimi.ua.ac.be/data/retail.dat. This data set comprises market baskets of items purchased together, where each record includes arbitrarily numbered items numbers without item descriptions (to protect the chain’s proprietary data).
+A Belgian supermarket chain wants to maximize its sales and profit margins. To be able to do this, I choose to analyze its retail transactional data using Association Rule Mining which is a data analysis technique used to discover interesting relationships, patterns, and associations between variables in large datasets. Commonly used in market basket analysis, ARM helps identify sets of items that frequently occur together in transactions. This is useful for the supermarket chain because ARM helps uncover patterns in what customers buy together, offering insights into their shopping habits, and can help it tailor their marketing strategies, store layouts, and product placements to match customer preferences and behaviors, ultimately enhancing the shopping experience. For example, if ARM reveals that customers who buy pasta also tend to buy tomato sauce, the store might run a promotion on pasta and sauce together. This targeted approach is more cost-effective and likely to increase sales compared to general promotions.
 
-![image](https://github.com/apoorvadudani/Market-Basket-Analysis/assets/113878059/d096135e-b032-4946-8b43-05e30659e3c5)
+Insights from ARM can inform more effective store layouts by placing items that are frequently bought together in close proximity. This can lead to increased cross-selling opportunities, as customers discover products related to their purchases conveniently placed nearby, encouraging additional purchases. ARM can also help supermarkets manage their inventory more efficiently. Understanding product associations allows stores to predict demand for products more accurately, especially when certain items are promoted or during specific seasons. This can lead to better stock levels, reduced waste, and improved turnover. Lastly, the knowledge gained from ARM can be used to develop dynamic pricing strategies. By understanding the strength of the association between products, supermarkets can adjust pricing to maximize profit margins without deterring customers. For example, a slight price increase on a product that is frequently bought with a discounted item might go unnoticed by customers.
 
-I use the data analysis method of association rule mining, which consists of four concepts that can help inform certain decisions that the supermarket chain can make to increase sales. Imagine we're talking about bread and peanut butter, two items commonly found in a grocery store.
+ARM is characterized by rules based on measures of interestingness, such as support, confidence, and lift. Imagine we're talking about bread and peanut butter, two items commonly found in a grocery store.
 
 1. Rules: Think about when you go grocery shopping. You might notice that when people buy bread, they often buy peanut butter too. In our grocery world, this observation is a rule: buying bread leads to buying peanut butter.
 
@@ -22,7 +22,10 @@ Rules show us the buying patterns, like bread often leads to peanut butter.
 Support tells us how common these combos are among all shopping trips.
 Confidence reveals how likely one item (peanut butter) is bought when another item (bread) is.
 Lift indicates if the pattern is just by chance or if it's a significant shopping habit.
-Knowing these patterns, te supermarket chain might place bread and peanut butter close to each other to encourage people to buy both, enhancing the shopping experience and possibly increasing sales.
+
+I investigate such associations in a large set of retail transaction data made publicly available by Brijs et al.: http://fimi.ua.ac.be/data/retail.dat. This data set comprises market baskets of items purchased together, where each record includes arbitrarily numbered items numbers without item descriptions (to protect the supermarket chain’s proprietary data).
+
+![image](https://github.com/apoorvadudani/Market-Basket-Analysis/assets/113878059/d096135e-b032-4946-8b43-05e30659e3c5)
 
 ## Data cleaning and preparation
 
