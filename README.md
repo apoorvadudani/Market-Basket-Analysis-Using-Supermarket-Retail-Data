@@ -6,6 +6,8 @@ A Belgian supermarket chain wants to maximize its sales and profit margins. To d
 
 Insights from ARM can inform more effective store layouts by placing items that are frequently bought together in close proximity. This can lead to increased cross-selling opportunities, as customers discover products related to their purchases conveniently placed nearby, encouraging additional purchases. ARM can also help supermarkets manage their inventory more efficiently. Understanding product associations allows stores to predict demand for products more accurately, especially when certain items are promoted or during specific seasons. This can lead to better stock levels, reduced waste, and improved turnover. Lastly, the knowledge gained from ARM can be used to develop dynamic pricing strategies. By understanding the strength of the association between products, supermarkets can adjust pricing to maximize profit margins without deterring customers. For example, a slight price increase on a product that is frequently bought with a discounted item might go unnoticed by customers.
 
+![image](https://github.com/apoorvadudani/Market-Basket-Analysis/assets/113878059/d096135e-b032-4946-8b43-05e30659e3c5)
+
 ARM is characterized by rules based on measures of interestingness:
 
 1. Rules: Think about when you go grocery shopping. You might notice that when people buy bread, they often buy peanut butter too. In our grocery world, this observation is a rule: buying bread leads to buying peanut butter.
@@ -13,16 +15,7 @@ ARM is characterized by rules based on measures of interestingness:
 3. Confidence: But how reliable is this pattern of buying bread and then peanut butter? Confidence gives us the certainty. If 50 people buy bread and 20 of them also buy peanut butter, then the confidence that bread leads to peanut butter is 40%. It means, "When bread is bought, there's a 40% chance peanut butter is bought too."
 4. Lift: You might wonder, "Is the connection between bread and peanut butter just by chance, or is it a special shopping pattern?" Lift answers this. It compares how much more often bread and peanut butter are bought together than would be expected if they were bought independently of each other. A lift of 1 means the bread and peanut butter combo is no more likely than chance; a lift greater than 1 means the combo is bought together more often than expected. If our bread and peanut butter have a lift of 2, it means they're twice as likely to be bought together than if there was no special link between them.
 
-Association rule mining helps us uncover interesting shopping patterns, like:
-
-Rules show us the buying patterns, like bread often leads to peanut butter.
-Support tells us how common these combos are among all shopping trips.
-Confidence reveals how likely one item (peanut butter) is bought when another item (bread) is.
-Lift indicates if the pattern is just by chance or if it's a significant shopping habit.
-
 I investigate such associations in a large set of retail transaction data made publicly available by Brijs et al.: http://fimi.ua.ac.be/data/retail.dat. This dataset comprises market baskets of items purchased together, where each record includes arbitrarily numbered items numbers without item descriptions (to protect the supermarket chain’s proprietary data).
-
-![image](https://github.com/apoorvadudani/Market-Basket-Analysis/assets/113878059/d096135e-b032-4946-8b43-05e30659e3c5)
 
 ## Data cleaning and preparation
 
