@@ -48,10 +48,6 @@ Then, I use a command called apriori on the data to find patterns (or associatio
 
 ## Visualization
 
-This command loads the arulesViz package, which is a tool that allows you to visualize the association rules you've found.
-
-plot(retail.rules)
-
 This line creates a basic plot (chart) of the association rules stored in retail.rules. The plot shows the rules according to their confidence (Y-axis) and support (X-axis), and it uses the darkness of points to indicate lift (how much more often the rule occurs than would be expected if the items were independent).
 
 ![image](https://github.com/apoorvadudani/Market-Basket-Analysis/assets/113878059/d249e012-da3b-406b-9018-377b1588d194)
